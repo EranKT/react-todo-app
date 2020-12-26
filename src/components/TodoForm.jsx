@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function TodoForm(props) {
   const [input, setInput] = useState("");
 
-  const handeChange = (e) => {
+  const handleChange = (e) => {
     setInput(e.target.value);
   };
 
@@ -24,7 +24,7 @@ function TodoForm(props) {
         value={input}
         name="text"
         className="todo-input"
-        onChange={handeChange}
+        onChange={handleChange}
       />
       <button className="todo-button">Add todo</button>
     </form>
